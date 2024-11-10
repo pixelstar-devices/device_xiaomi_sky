@@ -144,6 +144,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# BCR
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7.vendor:64 \
